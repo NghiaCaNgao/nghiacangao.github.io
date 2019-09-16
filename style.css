@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#negative {
+    transition: all 1s;
+}
+
+.negative {
+    position: fixed;
+    height: 200px;
+    overflow: hidden;
+    top: 38%;
+    z-index: 1000;
+}
+
+.menu {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.sub {
+    width: 50px;
+    flex: 1;
+    background: transparent;
+    margin: 10px 0px 0 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: aliceblue;
+    transition: width 1s;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.sub:hover {
+    background: #1ab394;
+    width: 70px;
+    box-shadow: 5px 5px rgb(83, 82, 81, 0.8);
+}
+
+.sub>a>i {
+    color: aliceblue;
+}
+
+.tgl {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#vbg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+}
+
+.avatar {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+    margin-top: 60px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.avatar:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    box-shadow: 15px 15px rgb(83, 82, 81, 0.8);
+}
+
+.follow {
+    height: 70px;
+    width: 60vw;
+    background: aliceblue;
+    margin: 100px;
+    border-radius: 30px;
+    display: flex;
+    overflow: hidden;
+    transition: box-shadow 0.5s;
+}
+
+.follow:hover {
+    box-shadow: 5px 10px rgb(83, 82, 81, 0.8);
+}
+
+.fol {
+    flex: 1;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30pt;
+}
+
+.fol:hover {
+    transition: all 0.2s;
+    background: #f8ac59;
+}
+
+.sec {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.setflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#sec1 {
+    background: #4c94f6;
+}
+
+#sec2 {
+    background: #ee5454;
+}
+
+#sec3 {
+    background: white;
+}
+
+#sec4 {
+    background: #343d46;
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+}
+
+.title>h1 {
+    margin: 50px;
+    font-size: 60pt;
+}
+
+.anh {
+    margin-bottom: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.5s
+}
+
+.anh:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    box-shadow: 10px 0 rgb(83, 82, 81, 0.8);
+    filter: brightness(110%);
+}
+
+.intro {
+    display: flex;
+    max-height: 80vh;
+}
+
+.infor {
+    margin: 100px 0px 100px 100px;
+}
+
+h1,
+h3 {
+    transition: all 2s;
+}
+
+h1:hover,
+h3:hover {
+    text-decoration: underline;
+}
+
+.negativeS {
+    position: fixed;
+    height: 70px;
+    overflow: hidden;
+    bottom: 0px;
+    left: 43%;
+    z-index: 1000;
+    width: 250px;
+    border-radius: 20px 20px 0 0px;
+}
+
+.menuS {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.subS {
+    height: 70px;
+    line-height: 70px;
+    flex: 1;
+    background: #daf8e3;
+    transition: background 1s;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.subS:hover {
+    background: #74ee98;
+    box-shadow: 5px 5px rgb(83, 82, 81, 0.8);
+}
+
+i {
+    color: #ee5454;
+}
+
+#sec3>.title>h1 {
+    color: black;
+}
+
+.show {
+    border-radius: 20px;
+    margin: 50px 10px 50px 10px;
+    max-width: 90vw;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 25pt;
+}
+
+p {
+    font-size: 18pt;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sec3 p {
+    text-align: center;
+}
+
+
+#sec4 a{
+    display: block;
+    height: 50px;
+    width: 90vw;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 20pt;
+    text-decoration: none;
+    margin: 20px;
+    transition: all 0.2s;
+}
+#sec4 a:hover{
+    background: white;
+    color: black;
+    box-shadow: 5px 5px rgb(238,84,84, 0.8);
+    
+}
+@media only screen and (max-width: 900px) {
+    .intro {
+        display: contents;
+        align-items: center;
+    }
+    .anh {
+        max-height: 40vh;
+        max-width: 80vw;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .infor {
+        margin: 50px 10px 50px 10px;
+    }
+    .title>h1 {
+        margin: 10px;
+        font-size: 45pt;
+    }
+    .sub {
+        width: 15vw;
+        margin: 7% 0 0 0;
+    }
+    .sub:hover {
+        width: 20vw;
+    }
+    .negativeS {
+        left: 0;
+        /* border-radius: 0px; */
+        border-radius: 20px 20px 0 0px;
+        min-width: 100vw;
+        height: 50px;
+    }
+    .subS {
+        height: 50px;
+        line-height: 50px;
+    }
+    #negative {
+        transition: none;
+    }
+    p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .intro {
+        display: contents;
+        align-items: center;
+    }
+    .anh {
+        max-height: 40vh;
+        max-width: 80vw;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .infor {
+        max-height: 40vh;
+        max-width: 80vw;
+    }
+    .title>h1 {
+        margin: 10px;
+        font-size: 30pt;
+    }
+    .sub {
+        width: 15vw;
+        margin: 7% 0 0 0;
+    }
+    .sub:hover {
+        width: 20vw;
+    }
+}
