@@ -266,6 +266,23 @@ p {
     margin: 20px;
     transition: all 0.2s;
 }
+
+.linka{
+        display: block;
+    height: 50px;
+    width: 90vw;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    line-height: 50px;
+    font-weight: 800;
+    font-size: 20pt;
+    text-decoration: none;
+    margin: 20px;
+    transition: all 0.2s;
+}
+
 #sec4 a:hover{
     background: white;
     color: black;
